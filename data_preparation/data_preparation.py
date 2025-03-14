@@ -9,7 +9,7 @@ import numpy as np
 from echo_profiles import echo_profiles
 from load_save_gt import load_gt, save_gt
 # from mediapipe_pose import mediapipe_pose_estimation
-from body_landmarks_hmr import body_landmarks_hmr
+# from body_landmarks_hmr import body_landmarks_hmr
 from utils import load_frame_time
 
 
@@ -50,7 +50,7 @@ def load_config(parent_folder, config_file):
             'videos']))  # if you want to specify videos manually, make sure that you cover all of them
 
     if 'tasks' not in config or len(config['tasks']) == 0:
-        config['tasks'] = ['classification', 'pose_estimation']  # default task is classification
+        config['tasks'] = ['classification']  # default task is classification
     return config
 
 
