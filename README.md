@@ -24,7 +24,7 @@ cd data_collection
 _**N.B.** All the directory changes in this doc is on the assumption that you are currently at project root._
 
 ```shell
-python data_collection.py --path-prefix ../data/pilot_study/ --commandsets upper-body --count_down 15 --folds 10 --reps_per_fold 1 --noserial --output <Pxx>
+./scripts/activities.sh <Pxx>
 ```
 
 Here, ```<Pxx>``` is the participant id (e.g. P01 / P02 / P03 etc.)
