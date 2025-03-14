@@ -1,0 +1,170 @@
+# Activity Recognition (ADL)
+# -----------------------------------
+
+bathroom:
+  idx: [0, 1, 2, 3, 4, 5, 6]
+  activities: [ 'null', 'rinse_mouth', 'brushing', 'flossing', 'brush_hair', 'flush_toilet', 'open_door' ]
+  durations: [5.0, 15.0, 35.0, 10.0, 15.0, 10.0, 10.0]
+  instruction_imgs: []
+  audio_instrctions: ['./audio/Rest.mp3', './audio/Rinse.mp3', './audio/Teeth.mp3', './audio/Floss.mp3', './audio/Hair.mp3', './audio/Flush.mp3', './audio/Door.mp3']
+  video_instructions: []
+
+kitchen:
+  idx: [0, 7, 8, 9, 10, 11, 12, 13, 14]
+  activities: [ 'null', 'washing_hands', 'eating', 'drinking', 'pickup/putdown', 'pouring', 'chopping', 'wiping_surface', 'stirring' ]
+  durations: [5.0, 15.0, 15.0, 10.0, 10.0, 10.0, 15.0, 10.0, 10.0]
+  instruction_imgs: []
+  audio_instrctions: ['./audio/Rest.mp3', './audio/Wash.mp3', './audio/Eat.mp3', './audio/Drink.mp3', './audio/Pickup.mp3', './audio/Pour.mp3', './audio/Chop.mp3', './audio/Wipe.mp3',  './audio/Stir.mp3']
+  video_instructions: []
+
+living-01:
+  idx: [15, 16, 17, 18, 19, 20]
+  activities: [ 'stationary', 'walking', 'sit/stand', 'coughing', 'yawning', 'talking' ]
+  durations: [25.0, 20.0, 10.0, 10.0, 15.0, 20.0]
+  instruction_imgs: []
+  audio_instrctions: ['./audio/Still.mp3', './audio/Walk.mp3', './audio/Sit.mp3', './audio/Cough.mp3', './audio/Yawn.mp3', './audio/Talk.mp3']
+  video_instructions: []
+
+living-02:
+  idx: [0, 21, 22, 23, 24, 25, 26, 27]
+  activities: [ 'null', 'putting_on_outerwear', 'vacuum', 'throwing', 'stretching', 'using_phone/tab', 'squat', 'reading_book' ]
+  durations: [5.0, 15.0, 20.0, 10.0, 10.0, 10.0, 10.0, 20.0]
+  instruction_imgs: []
+  audio_instrctions: ['./audio/Rest.mp3', './audio/Jacket.mp3', './audio/Vacuum.mp3', './audio/Throw.mp3', './audio/Stretch.mp3', './audio/Phone.mp3', './audio/squat.mp3', './audio/Read.mp3']
+  video_instructions: []
+
+
+
+# Pose Estimation
+# -----------------------------------
+
+upper-body:
+  idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  activities: [ 'right_arm_raise', 'left_arm_raise', 'both_arm_raise', 'right_arm_swing', 'left_arm_swing', 'both_arm_swing', 'wave_right_arm', 'wave_left_arm', 'jumping_jack', 'boxing_alternate', 'dribble_right', 'dribble_left' ]
+  durations: [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0]
+  instruction_imgs: []
+  audio_instrctions: ['./audio/right_raise.mp3', './audio/left_raise.mp3', './audio/both_raise.mp3', './audio/right_swing.mp3', './audio/left_swing.mp3', './audio/both_swing.mp3', './audio/wave_right.mp3', './audio/wave_left.mp3', './audio/jumping_jack.mp3', './audio/boxing.mp3', './audio/dribble_right.mp3', './audio/dribble_left.mp3']
+  video_instructions: ['./video/right_raise.mp4', './video/left_raise.mp4', './video/both_raise.mp4', './video/right_swing.mp4', './video/left_swing.mp4', './video/both_swing.mp4', './video/wave_right.mp4', './video/wave_left.mp4', './video/jumping_jack.mp4', './video/boxing.mp4', './video/dribble_right.mp4', './video/dribble_left.mp4']
+
+
+lower-body:
+  idx: [12, 13, 14, 15, 16, 17]
+  activities: [ 'right_leg_raise', 'left_leg_raise', 'squat', 'lunges_right', 'lunges_left', 'walking' ]
+  durations: [4.0, 4.0, 4.0, 4.0, 4.0, 4.0]
+  instruction_imgs: []
+  audio_instrctions: ['./audio/right_leg_raise.mp3', './audio/left_leg_raise.mp3', './audio/squat.mp3', './audio/lunges_right.mp3', './audio/lunges_left.mp3', './audio/walking.mp3']
+  video_instructions: ['./video/right_leg_raise.mp4', './video/left_leg_raise.mp4', './video/squat.mp4', './video/lunges_right.mp4', './video/lunges_left.mp4', './video/walking.mp4']
+
+
+full-body:
+  idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+  activities: [ 'right_arm_raise', 'left_arm_raise', 'both_arm_raise', 'right_arm_swing', 'left_arm_swing', 'both_arm_swing', 'wave_right_arm', 'wave_left_arm', 'jumping_jack', 'boxing_alternate', 'dribble_right', 'dribble_left', 'right_leg_raise', 'left_leg_raise', 'squat', 'lunges_right', 'lunges_left' ]
+  durations: [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0]
+  instruction_imgs: []
+  audio_instrctions: ['./audio/right_raise.mp3', './audio/left_raise.mp3', './audio/both_raise.mp3', './audio/right_swing.mp3', './audio/left_swing.mp3', './audio/both_swing.mp3', './audio/wave_right.mp3', './audio/wave_left.mp3', './audio/jumping_jack.mp3', './audio/boxing.mp3', './audio/dribble_right.mp3', './audio/dribble_left.mp3', './audio/right_leg_raise.mp3', './audio/left_leg_raise.mp3', './audio/squat.mp3', './audio/lunges_right.mp3', './audio/lunges_left.mp3']
+  video_instructions: ['./video/right_raise.mp4', './video/left_raise.mp4', './video/both_raise.mp4', './video/right_swing.mp4', './video/left_swing.mp4', './video/both_swing.mp4', './video/wave_right.mp4', './video/wave_left.mp4', './video/jumping_jack.mp4', './video/boxing.mp4', './video/dribble_right.mp4', './video/dribble_left.mp4', './video/right_leg_raise.mp4', './video/left_leg_raise.mp4', './video/squat.mp4', './video/lunges_right.mp4', './video/lunges_left.mp4']
+
+
+# Eating Detection
+# -----------------------------------
+
+eating:
+  idx: [1, 2, 3, 4, 5, 0]
+  activities: [ 'food_intake', 'chewing', 'drinking', 'talking', 'face_touch', 'null' ]
+  durations: [10.0, 15.0, 10.0, 10.0, 10.0, 15.0] # Total =  85.0 sec
+  instruction_imgs: []
+  audio_instrctions: ['./audio/take_food.mp3', './audio/chew.mp3', './audio/Drink.mp3', './audio/Talk.mp3', './audio/Rest.mp3', './audio/take_food.mp3']
+  video_instructions: []
+
+utensils:
+  idx: [0, 1, 2, 3, 4, 5, 6, 7]
+  activities: [ 'null', 'fork', 'spoon', 'knife', 'chopsticks', 'small_cup', 'large_cup', 'mug' ]
+  durations: [5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0] # Total =  40 sec
+  instruction_imgs: []
+  audio_instrctions: ['./audio/take_food.mp3', './audio/take_food.mp3', './audio/take_food.mp3', './audio/take_food.mp3', './audio/take_food.mp3', './audio/take_food.mp3', './audio/take_food.mp3', './audio/take_food.mp3', './audio/take_food.mp3']
+  video_instructions: []
+
+
+
+# Fitness Exercises
+# --------------------
+
+exercises_1:
+  idx: [0, 1, 2, 3, 4]
+  activities: ['front', 'side', 'overhead', 'curls', 'jumping']
+  durations: [ 24.0, 24.0, 24.0, 24.0, 24.0, 24.0 ] 
+  instruction_imgs: []
+  audio_instrctions: []
+  video_instructions: []
+
+exercises_2:
+  idx: [0, 1, 2, 3, 4]
+  activities: ['pushup', 'plank', 'bench_press', 'right_overhead', 'left_overhead', 'both_overhead', 'right_curl', 'left_curl' ]
+  durations: [15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0] 
+  instruction_imgs: []
+  audio_instrctions: []
+  video_instructions: []
+
+exercises_3:
+  idx: [0, 1, 2, 3, 4, 5, 6, 7]
+  activities: ['pushup', 'right_overhead', 'left_overhead', 'both_overhead', 'right_curl', 'left_curl', 'both_curl', 'null']
+  durations: [18.75, 18.75, 18.75, 18.75, 18.75, 18.75, 18.75, 18.75]
+  instruction_imgs: []
+  audio_instrctions: []
+  video_instructions: []
+
+
+
+# Hand-Face Interactions
+# -----------------------
+hand_face:
+  idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+  activities: ['null', 'thumb_ear_lob', 'tap_nose', 'swipe_chin', 'tap_temple', 'forward_slide', 'backward_slide', 'rub_eyes', 'rub_forehead', 'rub_head', 'blowing_nose', 'flossing', 'eat', 'drink', 'brush_teeth', 'sneeze', 'cough', 'skin_care']
+  durations: [10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0] 
+  instruction_imgs: []
+  audio_instrctions: ['./audio/null.mp3', './audio/thumb_ear_lob.mp3', './audio/tap_nose.mp3', './audio/swipe_chin.mp3', './audio/tap_temple.mp3', './audio/forward_slide.mp3', './audio/backward_slide.mp3', './audio/rub_eyes.mp3', './audio/rub_forehead.mp3', './audio/rub_head.mp3', './audio/blowing_nose.mp3', './audio/flossing.mp3', './audio/eat.mp3', './audio/drink.mp3', './audio/brush_teeth.mp3', './audio/sneeze.mp3', './audio/cough.mp3', './audio/skin_care.mp3']
+  video_instructions: []
+
+eyeglasses_gesture:
+  idx: [0, 1, 2, 3, 4]
+  activities: ['null', 'swipe_forward', 'swipe_backward', 'tap', 'squeeze']
+  durations: [10.0, 10.0, 10.0, 10.0, 10.0] 
+  instruction_imgs: []
+  audio_instrctions: ['./audio/null.mp3', './audio/swipe_forward.mp3', './audio/swipe_backward.mp3', './audio/tap.mp3', './audio/squeeze.mp3']
+  video_instructions: []
+
+silent_speech:
+  idx: [0, 1, 2, 3, 4, 5]
+  activities: ['null', 'play', 'pause', 'ok', 'cancel', 'help_me']
+  durations: [5.0, 5.0, 5.0, 5.0, 5.0, 5.0] 
+  instruction_imgs: []
+  audio_instrctions: []
+  video_instructions: []
+
+
+
+# WristSonic User Study
+# -----------------------
+hand-face-gesture:
+  idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  activities: ['null', 'thumb_ear_lob', 'tap_nose', 'swipe_chin', 'tap_temple', 'forward_slide', 'backward_slide', 'squeeze', 'rub_eyes', 'rub_forehead', 'rub_head']
+  durations: [8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0] 
+  instruction_imgs: []
+  audio_instrctions: ['./audio/null.mp3', './audio/thumb_ear_lob.mp3', './audio/tap_nose.mp3', './audio/swipe_chin.mp3', './audio/tap_temple.mp3', './audio/forward_slide.mp3', './audio/backward_slide.mp3', './audio/squeeze.mp3', './audio/rub_eyes.mp3', './audio/rub_forehead.mp3', './audio/rub_head.mp3']
+  video_instructions: []
+
+hand-face-activities:
+  idx: [0, 1, 2, 3, 4, 5] 
+  activities: ['null', 'drink', 'cough', 'sneeze', 'brush_teeth', 'skin_care']
+  durations: [8.0, 8.0, 8.0, 8.0, 8.0, 8.0] 
+  instruction_imgs: []
+  audio_instrctions: ['./audio/null.mp3', './audio/drink.mp3', './audio/cough.mp3', './audio/sneeze.mp3', './audio/brush_teeth.mp3', './audio/skin_care.mp3']
+  video_instructions: []
+
+head-motion:
+  idx: [0, 1, 2, 3, 4, 5, 6] 
+  activities: ['null', 'nod', 'shake', 'head_left', 'head_right', 'head_up', 'head_down']
+  durations: [8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0] 
+  instruction_imgs: []
+  audio_instrctions: ['./audio/null.mp3', './audio/nod.mp3', './audio/shake.mp3', './audio/head_left.mp3', './audio/head_right.mp3', './audio/head_up.mp3', './audio/head_down.mp3']
+  video_instructions: []

@@ -1,0 +1,68 @@
+{
+    "objectLabelData": [
+        {
+            "id": 0,
+            "name": "default",
+            "color": "#000000"
+        }
+    ],
+    "actionLabelData": [
+        {
+            "id": 0,
+            "name": "default",
+            "color": "#ff0000",
+            "objects": [
+                0
+            ]
+        },
+        {
+            "id": 1,
+            "name": "food_intake",
+            "color": "#0000d6",
+            "objects": [
+                0
+            ]
+        },
+        {
+            "id": 2,
+            "name": "chewing",
+            "color": "#00a300",
+            "objects": [
+                0
+            ]
+        },
+        {
+            "id": 3,
+            "name": "drinking",
+            "color": "#00f5f5",
+            "objects": [
+                0
+            ]
+        },
+        {
+            "id": 4,
+            "name": "talking",
+            "color": "#f57b00",
+            "objects": [
+                0
+            ]
+        },
+        {
+            "id": 5,
+            "name": "face_touch",
+            "color": "#d600d6",
+            "objects": [
+                0
+            ]
+        },
+        {
+            "id": 6,
+            "name": "laughing/coughing/yawning",
+            "color": "#ffff00",
+            "objects": [
+                0
+            ]
+        }
+    ],
+    "skeletonTypeData": []
+}
