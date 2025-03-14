@@ -1,0 +1,45 @@
+{
+    "audio": {
+        "config": {
+            "sampling_rate": 96000,
+            "n_channels": 2,
+            "channels_of_interest": [],
+            "signal": "FMCW",
+            "tx_file": [
+                "WAVfmcw20000_b9000_l600.wav",
+                "WAVfmcw31000_b9000_l600.wav"
+            ],
+            "frame_length": 600,
+            "sample_depth": 16,
+            "bandpass_range": [
+                [
+                    20000,
+                    29000
+                ],
+                [
+                    31000,
+                    40000
+                ]
+            ]
+        },
+        "files": [],
+        "syncing_poses": []
+    },
+    "ground_truth": {
+        "files": [
+            "record_20250314_173504_810663_records.txt"
+        ],
+        "videos": [
+            "record_20250314_173504_810663.mp4"
+        ],
+        "syncing_poses": []
+    },
+    "sessions": [
+        [
+            {
+                "start": 1741988114.941061,
+                "duration": 24.209301948547363
+            }
+        ]
+    ]
+}

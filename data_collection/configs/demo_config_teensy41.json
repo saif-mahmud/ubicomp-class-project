@@ -1,26 +1,26 @@
 {
     "audio": {
         "config": {
-            "sampling_rate": 50000,
-            "n_channels": 4,
-            "channels_of_interest": [2, 3],
+            "sampling_rate": 96000,
+            "n_channels": 2,
+            "channels_of_interest": [],
             "signal": "FMCW",
             "tx_file": [
-                "fmcw21500_b3000_l600.wav",
-                "fmcw18000_b3000_l600.wav"
+                "WAVfmcw20000_b9000_l600.wav",
+                "WAVfmcw31000_b9000_l600.wav"
             ],
             "frame_length": 600,
             "sample_depth": 16,
             "bandpass_range": [
-                [21500, 24500],
-                [18000, 21000]
+                [20000, 29000],
+                [31000, 40000]
             ]
         },
         "files": [
             "audio0.raw"
         ],
         "syncing_poses": [
-            39
+            239
         ]
     },
     "ground_truth": {

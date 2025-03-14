@@ -19,7 +19,7 @@ def load_config(config_path):
     if os.path.exists(config_path):
         config = json.load(open(config_path, 'rt'))
     else:
-        config = json.load(open('./configs/demo_config_nRF52840.json', 'rt'))
+        config = json.load(open('./configs/demo_config_teensy41.json', 'rt'))
         config['audio']['files'] = []
         config['audio']['syncing_poses'] = []
         config['ground_truth']['files'] = []
