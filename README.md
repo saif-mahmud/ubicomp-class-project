@@ -55,11 +55,6 @@ python audio_auto_sync.py --path ../data/pilot_study/<Pxx>
 python data_preparation.py -md 500000000 -nd -500000000 -f --path ../data/pilot_study/<Pxx>
 ```
 
-**if** the data was collected using **BLE SD Module (nRF52840)**:
-```shell
-python data_preparation.py -md 120000000 -nd -120000000 -f --path ../data/pilot_study/<Pxx>
-```
-
 ### Echo Profile Visualization
 
 ```shell
